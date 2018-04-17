@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--
+    tools:text="阮严冬"
+          运行时看不到，
+          达到预览的效果
+          -->
+
+        <TextView
+            tools:text="阮严冬"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            tools:text="阮严冬的内容"
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/contentImage"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+
+</RelativeLayout>
